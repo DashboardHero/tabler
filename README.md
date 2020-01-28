@@ -2,6 +2,8 @@ The same Tabler admin you know and love - easier to customize and work with.
 React, Angular and Vue are great technologies, but too complex for a project the size of an admin dashboard. 
 This version of Tabler comes with components, folder-based routing and the same MIT license.
 
+![Tabler admin view](https://raw.githubusercontent.com/tabler/tabler/dev/static/tabler-preview.png)
+
 ---
 
 # Overview
