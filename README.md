@@ -1,4 +1,4 @@
-The same Tabler admin you know and love - easier to customize and work with. 
+The same Tabler admin you know and love - easier to customize and work with. A functional Single Page Application that you can ship today.
 React, Angular and Vue are great technologies, but too complex for a project the size of an admin dashboard. 
 This version of Tabler comes with components, folder-based routing and the same MIT license.
 
@@ -34,11 +34,26 @@ Work with this:
 ```
 ## Folder-based routing(with multiple routes, for easy to understand public - Login/Register - layouts)
 
+```
+src/routes/Dashboard
+src/routes/FormElements
+src/routes/Base
+src/routes/Charts
+src/routes/Charts/ApexCharts
+```
+You get the idea. No router setup needed.
+
 ## Environment variables
+
+You might want to have a dev and prod environment. Tabler components makes it easy, with a rollup plugin.
 
 ## Single component rendering
 
+Work on and debug one component at a time. Divide et impera!
+
 ## Easy deployment
+
+The build process outputs a static website, that you can deploy to surge, now, Firebase Hosting or your favourite web hosting provider. Easy, fast and reliable!
 
 
 
