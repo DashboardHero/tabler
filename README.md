@@ -16,7 +16,7 @@ Svelte components are just javascript, HTML(with some templating) and CSS. Thing
 Instead of working directly with HTML, work with components.
 
 Instead of this:
-![Tabler admin html code](https://ibb.co/9TKsLrP)
+![Tabler admin html code](https://i.ibb.co/DCc5yRd/Screen-Shot-2020-01-28-at-10-10-16-AM.jpg)
 
 Work with this:
 ```
