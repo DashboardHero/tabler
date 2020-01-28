@@ -1,93 +1,43 @@
-*Psst — looking for a shareable component template? Go here --> [sveltejs/component-template](https://github.com/sveltejs/component-template)*
+The same Tabler admin you know and love - easier to customize and work with. 
+React, Angular and Vue are great technologies, but too complex for a project the size of an admin dashboard. 
+This version of Tabler comes with components, folder-based routing and the same MIT license.
 
 ---
 
-# svelte app
+# Overview
 
-This is a project template for [Svelte](https://svelte.dev) apps. It lives at https://github.com/sveltejs/template.
+React components are great - but React has a learning curve of at least 2 months. Often, developers need to showcase their work or launch an MVP in what little spare time they have.
 
-To create a new project based on this template using [degit](https://github.com/Rich-Harris/degit):
+Svelte components are just javascript, HTML(with some templating) and CSS. Things you know and understand. Moreover, you can go through the Svelte documentation in 30 minutes, and start working productively on your amazing admin dashboard the next 30.
 
-```bash
-npx degit sveltejs/template svelte-app
-cd svelte-app
+
+## Components
+
+Instead of working directly with HTML, work with components.
+
+Instead of this:
+![Tabler admin html code](https://ibb.co/9TKsLrP)
+
+Work with this:
 ```
-
-*Note that you will need to have [Node.js](https://nodejs.org) installed.*
-
-
-## Get started
-
-Install the dependencies...
-
-```bash
-cd svelte-app
-npm install
+<TopBar/>
+<Nav />
+<InnerPage title="Dashboard"/>
+<div class="row row-deck">
+   <div class="col-sm-6 col-lg-3">
+   <Card data = { data.getSalesCardData() } />
+   </div>
+</div>
+...
 ```
+## Folder-based routing(with multiple routes, for easy to understand public - Login/Register - layouts)
 
-...then start [Rollup](https://rollupjs.org):
+## Environment variables
 
-```bash
-npm run dev
-```
+## Single component rendering
 
-Navigate to [localhost:5000](http://localhost:5000). You should see your app running. Edit a component file in `src`, save it, and reload the page to see your changes.
-
-By default, the server will only respond to requests from localhost. To allow connections from other computers, edit the `sirv` commands in package.json to include the option `--host 0.0.0.0`.
+## Easy deployment
 
 
-## Building and running in production mode
-
-To create an optimised version of the app:
-
-```bash
-npm run build
-```
-
-You can run the newly built app with `npm run start`. This uses [sirv](https://github.com/lukeed/sirv), which is included in your package.json's `dependencies` so that the app will work when you deploy to platforms like [Heroku](https://heroku.com).
 
 
-## Single-page app mode
-
-By default, sirv will only respond to requests that match files in `public`. This is to maximise compatibility with static fileservers, allowing you to deploy your app anywhere.
-
-If you're building a single-page app (SPA) with multiple routes, sirv needs to be able to respond to requests for *any* path. You can make it so by editing the `"start"` command in package.json:
-
-```js
-"start": "sirv public --single"
-```
-
-
-## Deploying to the web
-
-### With [now](https://zeit.co/now)
-
-Install `now` if you haven't already:
-
-```bash
-npm install -g now
-```
-
-Then, from within your project folder:
-
-```bash
-cd public
-now deploy --name my-project
-```
-
-As an alternative, use the [Now desktop client](https://zeit.co/download) and simply drag the unzipped project folder to the taskbar icon.
-
-### With [surge](https://surge.sh/)
-
-Install `surge` if you haven't already:
-
-```bash
-npm install -g surge
-```
-
-Then, from within your project folder:
-
-```bash
-npm run build
-surge public my-project.surge.sh
-```
